@@ -21,7 +21,7 @@ const translations = {
         plannerTag: "Built for mobile network planners and executers",
         title: "The AI-powered mobile network infrastructure platform",
         body: "Turn network planning into field-ready deployment instructions, instantly and reliably.",
-        cta1: "Request Free Access",
+        cta1: "Request Access",
         cta2: "Read the Case Study",
         demoNote: "30 min with our founder, on real sites, not slides.",
       },
@@ -145,7 +145,7 @@ const translations = {
       cta: {
         title: "Ready to run your next planning cycle on Acernis?",
         subtitle: "Book a 30-minute call with our founder.",
-        cta1: "Request Free Access",
+        cta1: "Request Access",
         cta2: "Read the Case Study",
       },
       faq: {

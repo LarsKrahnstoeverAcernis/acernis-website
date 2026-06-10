@@ -649,12 +649,12 @@ export default function HomePage() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
               href="/contact"
-              className="btn-press inline-flex items-center gap-2 px-7 py-4 text-sm font-semibold rounded-lg"
+              className="btn-press inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium rounded-md transition-all"
               style={{ backgroundColor: "#07644D", color: "#F0FDF4" }}
               onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.backgroundColor = "#055035"; }}
               onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.backgroundColor = "#07644D"; }}
             >
-              {h.cta.cta1} <ArrowRight size={16} />
+              {h.cta.cta1} <MoveRight size={12} />
             </Link>
           </div>
         </div>

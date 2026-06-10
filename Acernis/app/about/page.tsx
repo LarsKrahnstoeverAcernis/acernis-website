@@ -1,6 +1,6 @@
 ﻿"use client";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { MoveRight } from "lucide-react";
 import { useLanguage } from "@/lib/i18n";
 
 function Eyebrow({ children }: { children: React.ReactNode }) {
@@ -62,12 +62,12 @@ export default function AboutPage() {
           <h2 className="text-3xl font-bold mb-8" style={{ color: "#F0FDF4" }}>{t.home.cta.title}</h2>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 px-6 py-3.5 text-sm font-semibold rounded-lg transition-all"
+            className="btn-press inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium rounded-md transition-all"
             style={{ backgroundColor: "#07644D", color: "#F0FDF4" }}
             onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.backgroundColor = "#055035"; }}
             onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.backgroundColor = "#07644D"; }}
           >
-            {t.home.cta.cta1} <ArrowRight size={16} />
+            {t.home.cta.cta1} <MoveRight size={12} />
           </Link>
         </div>
       </section>
