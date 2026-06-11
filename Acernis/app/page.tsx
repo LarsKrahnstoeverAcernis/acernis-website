@@ -640,7 +640,20 @@ export default function HomePage() {
                       <p className="text-sm" style={{ color: "#8A9EA0" }}>{h.videoSection.placeholder}</p>
                     </>
                   ) : (
-                    <p className="text-base font-semibold" style={{ color: "#B0BBBF" }}>{h.videoSection.comingSoon}</p>
+                    <>
+                      <p className="text-base font-semibold" style={{ color: "#B0BBBF" }}>{h.videoSection.comingSoon}</p>
+                      <a
+                        href="https://app.acernis.fr"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm transition-colors"
+                        style={{ color: "#0FA876" }}
+                        onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.color = "#07644D"; }}
+                        onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.color = "#0FA876"; }}
+                      >
+                        Try it on app.acernis.fr
+                      </a>
+                    </>
                   )}
                 </div>
               </div>
