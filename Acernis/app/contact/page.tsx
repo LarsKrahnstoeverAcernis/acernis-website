@@ -28,7 +28,7 @@ export default function ContactPage() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
-      if (res.ok) setSent(true);
+      if (res.ok) { setSent(true); setFormData({ name: "", company: "", email: "", message: "" }); }
     } finally {
       setSending(false);
     }
