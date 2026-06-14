@@ -103,6 +103,15 @@ export default function Navbar() {
         </div>
 
         <div className="hidden md:flex items-center gap-3">
+          <a
+            href="https://app.acernis.fr/login?next=%2Fprojects"
+            className="px-3 py-1.5 text-xs rounded-md transition-colors"
+            style={{ color: "#6B7280" }}
+            onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.color = "#D1D1D6"; }}
+            onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.color = "#6B7280"; }}
+          >
+            Log in
+          </a>
           <Link
             href="/contact"
             className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium rounded-md transition-all"
